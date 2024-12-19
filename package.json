@@ -18,7 +18,6 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./lib_types/vue-ganttastic.d.ts",
       "import": "./lib/vue-ganttastic.js",
       "require": "./lib/vue-ganttastic.umd.cjs"
     }
