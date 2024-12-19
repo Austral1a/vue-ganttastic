@@ -18,10 +18,12 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./lib_types/types.d.ts",
       "import": "./lib/vue-ganttastic.js",
       "require": "./lib/vue-ganttastic.umd.cjs"
     }
   },
+  "types": "./lib_types/types.d.ts",
   "main": "./lib/vue-ganttastic.umd.cjs",
   "files": [
     "lib"
