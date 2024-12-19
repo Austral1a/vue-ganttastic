@@ -5,7 +5,7 @@
   "author": "Marko Zunic (@zunnzunn)",
   "scripts": {
     "serve": "vite",
-    "build": "NODE_ENV=sus npm run build:types && npm run build:lib",
+    "build": "npm run build:types && npm run build:lib",
     "build:lib": "vite build",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly --outDir lib_types",
     "typecheck": "vue-tsc --noEmit",
@@ -24,7 +24,7 @@
     }
   },
   "main": "./lib/vue-ganttastic.umd.cjs",
-  "types": "./lib_types/vue-ganttastic.d.ts",
+  "types": "./lib_types",
   "files": [
     "lib_types",
     "lib/vue-ganttastic.js",
