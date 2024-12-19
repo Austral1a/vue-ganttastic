@@ -24,7 +24,6 @@
     }
   },
   "main": "./lib/vue-ganttastic.umd.cjs",
-  "types": "./lib_types/vue-ganttastic.d.ts",
   "files": [
     "lib"
   ],
