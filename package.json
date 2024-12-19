@@ -5,7 +5,7 @@
   "author": "Marko Zunic (@zunnzunn)",
   "scripts": {
     "serve": "vite",
-    "build": "npm run build:types && npm run build:lib",
+    "build": "NODE_ENV=sus npm run build:types && npm run build:lib",
     "build:lib": "vite build",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly --outDir lib_types",
     "typecheck": "vue-tsc --noEmit",
@@ -18,17 +18,21 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./lib_types/types.d.ts",
+      "types": "./lib_types/vue-ganttastic.d.ts",
       "import": "./lib/vue-ganttastic.js",
       "require": "./lib/vue-ganttastic.umd.cjs"
     }
   },
-  "types": "./lib_types/types.d.ts",
   "main": "./lib/vue-ganttastic.umd.cjs",
+  "types": "./lib_types/vue-ganttastic.d.ts",
   "files": [
-    "lib"
+    "lib_types",
+    "lib/vue-ganttastic.js",
+    "lib/vue-ganttastic.umd.cjs"
   ],
-  "devDependencies": {
+  "peerDependencies": {
+    "dayjs": "^1.11.5",
+    "vue": "^3.2.40",
     "@rushstack/eslint-patch": "^1.2.0",
     "@senojs/rollup-plugin-style-inject": "^0.1.1",
     "@types/node": "^16.11.58",
@@ -48,10 +52,6 @@
     "vite": "^3.1.6",
     "vitepress": "^1.0.0-rc.4",
     "vue-tsc": "^1.8.27"
-  },
-  "peerDependencies": {
-    "dayjs": "^1.11.5",
-    "vue": "^3.2.40"
   },
   "homepage": "https://zunnzunn.github.io/vue-ganttastic/",
   "keywords": [
