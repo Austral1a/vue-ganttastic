@@ -30,7 +30,22 @@
     "lib/vue-ganttastic.js",
     "lib/vue-ganttastic.umd.cjs"
   ],
-  "peerDependencies": {
+  "homepage": "https://zunnzunn.github.io/vue-ganttastic/",
+  "keywords": [
+    "gantt",
+    "chart",
+    "bar",
+    "diagram",
+    "vue",
+    "vuejs",
+    "ganttastic"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zunnzunn/vue-ganttastic"
+  },
+  "dependencies": {
     "dayjs": "^1.11.5",
     "vue": "^3.2.40",
     "@rushstack/eslint-patch": "^1.2.0",
@@ -53,20 +68,5 @@
     "vitepress": "^1.0.0-rc.4",
     "vue-tsc": "^1.8.27",
     "@vueuse/core": "^9.1.1"
-  },
-  "homepage": "https://zunnzunn.github.io/vue-ganttastic/",
-  "keywords": [
-    "gantt",
-    "chart",
-    "bar",
-    "diagram",
-    "vue",
-    "vuejs",
-    "ganttastic"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zunnzunn/vue-ganttastic"
   }
 }
